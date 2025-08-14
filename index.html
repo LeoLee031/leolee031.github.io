@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuan Chang Lee - Software Engineer Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Yuan Chang Lee - Experienced Software Engineer specializing in full-stack development, data pipelines, and AI integration. Currently pursuing MS in Information Systems at Northeastern University.">
+  <meta name="keywords" content="Yuan Chang Lee, Software Engineer, Full Stack Developer, Java, React, Spring Boot, Data Engineering, AI, Machine Learning, Boston">
+  <meta name="author" content="Yuan Chang Lee">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Yuan Chang Lee - Software Engineer Portfolio">
+  <meta property="og:description" content="Experienced Software Engineer specializing in full-stack development, data pipelines, and AI integration.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/images/my-avatar.png">
+  <meta property="og:url" content="https://leolee031.github.io">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Yuan Chang Lee - Software Engineer">
+  <meta name="twitter:description" content="Experienced Software Engineer specializing in full-stack development, data pipelines, and AI integration.">
+  <meta name="twitter:image" content="./assets/images/my-avatar.png">
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/custom.css">
+
+  <!--
+    - Structured Data for SEO
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yuan Chang Lee",
+    "jobTitle": "Software Engineer",
+    "description": "Experienced Software Engineer specializing in full-stack development, data pipelines, and AI integration",
+    "url": "https://leolee031.github.io",
+    "image": "./assets/images/my-avatar.png",
+    "email": "lee.yuan@northeastern.edu",
+    "telephone": "+1-857-230-8998",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Boston",
+      "addressRegion": "MA",
+      "addressCountry": "US"
+    },
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "Northeastern University",
+        "description": "Master of Science in Information Systems"
+      },
+      {
+        "@type": "EducationalOrganization", 
+        "name": "National Yunlin University of Science and Technology",
+        "description": "Bachelor of Science in Computer Science"
+      }
+    ],
+    "worksFor": [
+      {
+        "@type": "Organization",
+        "name": "MediaTek",
+        "description": "Software Engineer"
+      }
+    ],
+    "knowsAbout": [
+      "Java", "Spring Boot", "React", "JavaScript", "Python", "AWS", "Docker", "Kubernetes", "Data Engineering", "Artificial Intelligence", "Machine Learning"
+    ],
+    "sameAs": [
+      "https://github.com/LeoLee031",
+      "https://www.linkedin.com/in/yuan-chang-lee"
+    ]
+  }
+  </script>
+  
+  <!--
+    - Image optimization styles
+  -->
+  <style>
+    /* Avatar and profile images */
+    .avatar-box img {
+      width: 100px !important;
+      height: 100px !important;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+    
+    /* Testimonials/Achievement avatars */
+    .testimonials-avatar-box img, .modal-avatar-box img {
+      width: 60px !important;
+      height: 60px !important;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    
+    /* Project images */
+    .project-img img {
+      width: 100% !important;
+      height: 200px !important;
+      object-fit: cover;
+      border-radius: 16px 16px 0 0;
+    }
+    
+    /* Blog images */
+    .blog-banner-box img {
+      width: 100% !important;
+      height: 200px !important;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+    
+    /* Technology logos */
+    .clients-item img {
+      width: 100px !important;
+      height: 60px !important;
+      object-fit: contain;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+    }
+    
+    /* Service icons */
+    .service-icon-box img {
+      width: 40px !important;
+      height: 40px !important;
+      object-fit: contain;
+    }
+    
+    /* Loading animation for images */
+    img[loading="lazy"] {
+      transition: opacity 0.3s ease;
+    }
+    
+    img[loading="lazy"]:not([src]) {
+      opacity: 0;
+    }
+    
+    /* Image hover effects */
+    .project-img img:hover,
+    .blog-banner-box img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+    
+    .project-img {
+      overflow: hidden;
+    }
+    
+    /* Fallback for broken images */
+    img::before {
+      content: "Image";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #f0f0f0;
+      color: #666;
+      padding: 20px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    
+    /* Responsive images */
+    @media (max-width: 768px) {
+      .project-img img,
+      .blog-banner-box img {
+        height: 180px !important;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .project-img img,
+      .blog-banner-box img {
+        height: 160px !important;
+      }
+      
+      .avatar-box img {
+        width: 90px !important;
+        height: 90px !important;
+      }
+    }
+  </style>
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Yuan Chang Lee Professional Photo" width="100" loading="eager">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Yuan Chang Lee">Yuan Chang Lee</h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:lee.yuan@northeastern.edu" class="contact-link">lee.yuan@northeastern.edu</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+18572308998" class="contact-link">+1 (857) 230-8998</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Status</p>
+
+              <time>Available for Full-time</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Boston, MA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/LeoLee031" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/yuan-chang-lee" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="mailto:lee.yuan@northeastern.edu" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a passionate Software Engineer currently pursuing my Master's in Information Systems at Northeastern University. 
+            With extensive experience in full-stack development, I specialize in building scalable microservices, 
+            data pipelines, and modern web applications.
+          </p>
+
+          <p>
+            My expertise spans across multiple domains including backend development with Java and Spring Boot, 
+            frontend development with React, cloud technologies with AWS, and DevOps practices. 
+            I have successfully delivered enterprise-level solutions at companies like MediaTek, 
+            where I engineered fault-tolerant data pipelines handling 2TB+ daily data transfers with 99.9% reliability.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Backend Development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Backend Development</h4>
+
+                <p class="service-item-text">
+                  Professional development of scalable APIs and microservices using Spring Boot, Node.js, and cloud technologies.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="Frontend Development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Frontend Development</h4>
+
+                <p class="service-item-text">
+                  Modern responsive web applications using React, JavaScript, and component-based architecture.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="Data Engineering icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Engineering</h4>
+
+                <p class="service-item-text">
+                  Building robust data pipelines using Apache NiFi, Kafka, and implementing fault-tolerant architectures.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="DevOps icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">DevOps & Cloud</h4>
+
+                <p class="service-item-text">
+                  CI/CD pipeline implementation, containerization with Docker/Kubernetes, and AWS cloud deployment.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Key Achievements</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="MediaTek" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>MediaTek Impact</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Engineered fault-tolerant data pipelines that reduced manual processing time by 65% and handled 
+                    2TB+ daily data transfers with 99.9% reliability. Implemented automated monitoring systems that 
+                    reduced IT workload by 60% through intelligent alert mechanisms.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Performance Optimization" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Performance Excellence</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Consistently delivered performance improvements across projects: 40% query optimization at Gene Taiwan, 
+                    50% failover downtime reduction at Omniwaresoft, and 2x deployment speed acceleration through 
+                    CI/CD implementation.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Code Quality" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Code Quality & Testing</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Maintained high code quality standards with 85% code coverage through comprehensive testing 
+                    strategies using JUnit and integration tests. Implemented best practices for scalable and 
+                    maintainable codebases.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Innovation" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title">Innovation & AI</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Developed cutting-edge AI-powered applications including an intelligent flashcard system with 
+                    GPT-4 integration and a mobile language learning app with real-time object recognition, 
+                    showcasing expertise in emerging technologies.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="MediaTek Achievement Representative Profile" width="80" data-modal-img loading="lazy">
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>MediaTek Impact</h4>
+
+              <time datetime="2023-09-01">September 2023 - September 2024</time>
+
+              <div data-modal-text>
+                <p>
+                  Engineered fault-tolerant data pipelines that reduced manual processing time by 65% and handled 
+                  2TB+ daily data transfers with 99.9% reliability. Implemented automated monitoring systems that 
+                  reduced IT workload by 60% through intelligent alert mechanisms.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Technologies</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="Java Spring Boot Technology Stack" loading="lazy">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="React Frontend Framework" loading="lazy">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="Amazon Web Services Cloud Platform" loading="lazy">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="Docker Containerization Technology" loading="lazy">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="Kubernetes Container Orchestration" loading="lazy">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="Apache Kafka Message Streaming" loading="lazy">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Master of Science in Information Systems</h4>
+
+              <span>2024 — 2026 (Expected)</span>
+
+              <p class="timeline-text">
+                <strong>Northeastern University</strong>, Boston, MA<br>
+                Courses: Web Development Tools & Methods, Program Structure & Algorithms, Concepts of Object-Oriented Design, 
+                Data Management and Database Design, Application Engineering and Development, Network and Cloud Computing
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bachelor of Science in Computer Science</h4>
+
+              <span>2019 — 2023</span>
+
+              <p class="timeline-text">
+                <strong>National Yunlin University of Science and Technology</strong>, Taiwan<br>
+                Courses: Java Programming, Systems Analysis and Design, Object-Oriented Software Engineering, 
+                Data Structure, Algorithms, Database Administration, Web Application Development
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Engineer - MediaTek</h4>
+
+              <span>Sep 2023 — Sep 2024</span>
+
+              <p class="timeline-text">
+                <strong>San Diego, California, United States</strong><br>
+                • Engineered data pipelines using Apache NiFi with fault-tolerant architecture, reducing manual processing time by 65%<br>
+                • Implemented Linux shell scripts for real-time monitoring, enabling automated email alert systems via SMTP integration<br>
+                • Developed RESTful APIs with Spring Boot and JSON for customizable data synchronization, reducing IT workload by 60%<br>
+                • Designed microservice handling 2TB+ daily data transfers between cloud and on-premises systems with 99.9% reliability
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Backend Software Engineer - Omniwaresoft Technology Inc.</h4>
+
+              <span>Mar 2023 — Sep 2023</span>
+
+              <p class="timeline-text">
+                <strong>Taipei City, Taiwan</strong><br>
+                • Optimized database through high-availability clusters and streaming replication, reducing failover downtime by 50%<br>
+                • Constructed CI/CD workflows with Docker, Kubernetes, and GitHub Actions, accelerating deployment speed by 2x<br>
+                • Enhanced performance through stored procedures, indexing strategies, and query optimization, reducing time by 40%<br>
+                • Implemented automated testing with JUnit and integration tests, achieving 85% code coverage
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Engineer - Gene Taiwan</h4>
+
+              <span>Aug 2022 — Mar 2023</span>
+
+              <p class="timeline-text">
+                <strong>Taipei City, Taiwan</strong><br>
+                • Engineered responsive UI using React.js with component-based architecture, boosting user engagement by 30%<br>
+                • Designed RESTful APIs with MySQL implementing connection pooling, scaling to support 100+ concurrent users<br>
+                • Improved performance by 40% through implementing Redis caching, code splitting, and lazy loading techniques<br>
+                • Developed secure authentication using JWT tokens and role-based access control
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Technical Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Java / Spring Boot</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">JavaScript / React</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python / Flask</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Database Design / SQL</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">DevOps / Cloud (AWS)</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Data Engineering</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PROJECTS
+      -->
+
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="ai/ml projects">
+              <a href="https://github.com/LeoLee031" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="AI-Powered Flashcard Learning System with GPT-4 Integration" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">AI-Powered Flashcard Learning System</h3>
+
+                <p class="project-category">AI/ML Projects</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="desktop apps">
+              <a href="https://github.com/LeoLee031" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="Calendar Application Task Management System with JavaFX" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Calendar Application - Task Management</h3>
+
+                <p class="project-category">Desktop Apps</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web applications">
+              <a href="https://github.com/LeoLee031" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.png" alt="Real-time Chat Application with Node.js and JavaScript" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Real-time Chat Application</h3>
+
+                <p class="project-category">Web Applications</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Apache NiFi Data Pipeline Architecture Diagram" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Data Engineering</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-02-23">Feb 23, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Building Fault-Tolerant Data Pipelines with Apache NiFi</h3>
+
+                  <p class="blog-text">
+                    Learn how to design and implement robust data pipelines that can handle enterprise-scale data processing with high reliability.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Microservices Architecture Best Practices Diagram" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Architecture</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-01-15">Jan 15, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Microservices Architecture: Best Practices and Patterns</h3>
+
+                  <p class="blog-text">
+                    Exploring the key principles and patterns for building scalable microservices that can handle high-volume data transfers.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Spring Boot Performance Optimization Code Examples" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Backend</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-12-10">Dec 10, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Spring Boot Performance Optimization Techniques</h3>
+
+                  <p class="blog-text">
+                    Deep dive into advanced Spring Boot optimization strategies to achieve maximum performance and scalability.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="AI Integration in Web Applications with GPT-4" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">AI/ML</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-11-28">Nov 28, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">AI Integration in Modern Web Applications</h3>
+
+                  <p class="blog-text">
+                    How to effectively integrate AI capabilities like GPT-4 and computer vision into your web applications.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="DevOps CI/CD Pipeline with Docker and Kubernetes" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">DevOps</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-10-12">Oct 12, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">DevOps Best Practices: CI/CD with Docker and Kubernetes</h3>
+
+                  <p class="blog-text">
+                    Complete guide to implementing robust CI/CD pipelines that accelerate deployment speed and improve reliability.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Database Performance Optimization Strategies" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Database</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-09-05">Sep 05, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Database Optimization Strategies for High-Traffic Applications</h3>
+
+                  <p class="blog-text">
+                    Advanced techniques for optimizing database performance, including indexing strategies and query optimization.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d188239.27034090644!2d-71.07764089999999!3d42.31390625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3652d0d3d311b%3A0x787cbf240162e8a0!2sBoston%2C%20MA%2C%20USA!5e0!3m2!1sen!2sus!4v1647608789441!5m2!1sen!2sus"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
